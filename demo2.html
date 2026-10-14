@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Smart Home</title>
+</head>
+<body bgcolor="lightblue">
+
+    <header>
+        <table width="100%">
+            <tr>
+                <td width="78%" valign="top">
+                    <h1 id="top"><img src="home3.png" alt="Smart Home logo" width="50" height="50" align="middle"> <font color="darkblue">Smart Home</font></h1>
+                    <nav>
+                        <a href="#living-room"><strong>Living Room</strong></a> |
+                        <a href="#kitchen"><strong>Kitchen</strong></a> |
+                        <a href="#bedroom"><strong>Bedroom</strong></a> |
+                        <a href="#garden"><strong>Garden</strong></a>
+                    </nav>
+                </td>
+                <td valign="top">
+                    <h2>Notifications</h2>
+                    <details>
+                        <summary>Show notifications <strong>(5)</strong></summary>
+                        <ul>
+                            <li><font color="red">ALERT Kitchen| Smoke detected!</li>
+                            <li><font color="red">ALERT Kitchen| Water leak detected!</li>
+                            <li><font color="red">ALERT Garden| Soil moisture is too low!</li>
+                            <li><font color="red">ALERT Bedroom| Motion detected!</li>
+                            <li><font color="red">ALERT Kitchen| Gas leak sensor is OFF.</li>
+                        </ul>
+                    </details>
+                </td>
+            </tr>
+        </table>
+    </header>
+
+    <hr>
+
+    <main>
+
+        <!-- ================= Dnevna ================= -->
+        <section id="living-room">
+            <h2>Living Room</h2>
+
+            <table width="100%">
+                <tr>
+                    <td width="33%" valign="top">
+                        <fieldset>
+                            <legend><strong>Temperature sensor 🟢 ON</strong></legend>
+                            <p>Temperature: <output>22</output> °C</p>
+                            <p>Battery level:
+                                <meter min="0" max="100" low="20" high="50" optimum="100" value="85">85%</meter> 85%
+                            </p>
+                        </fieldset>
+                    </td>
+                    <td width="33%" valign="top">
+                        <fieldset>
+                            <legend><strong>Light sensor 🟢 ON</strong></legend>
+                            <p>Light level:
+                                <meter min="0" max="100" value="75">75%</meter> 75%
+                            </p>
+                            <p>Battery level:
+                                <meter min="0" max="100" low="20" high="50" optimum="100" value="73">73%</meter> 73%
+                            </p>
+                        </fieldset>
+                    </td>
+                    <td width="33%" valign="top">
+                        <fieldset>
+                            <legend><strong>Noise sensor 🟢 ON</strong></legend>
+                            <p>Noise level:
+                                <meter min="0" max="100" value="35">35</meter>
+                                <output>35</output> <abbr title="Decibels">dB</abbr>
+                            </p>
+                            <p>Battery level:
+                                <meter min="0" max="100" low="20" high="50" optimum="100" value="43">43%</meter> 43%
+                            </p>
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+
+            <details>
+                <summary>Show more: Room Rules</summary>
+                <ul>
+                    <li>Temperature must be between 20°C and 24°C.</li>
+                    <li>Light level should be between 30% and 80%.</li>
+                    <li>Noise level must remain below 60 <abbr title="Decibels">dB</abbr>.</li>
+                </ul>
+            </details>
+
+            <p><a href="#top">Back to top</a></p>
+        </section>
+
+        <hr>
+
+        <!-- ================= Kujna ================= -->
+        <section id="kitchen">
+            <h2>Kitchen</h2>
+
+            <table width="100%">
+                <tr>
+                    <td width="33%" valign="top">
+                        <fieldset>
+                            <legend><strong>Smoke sensor 🟢 ON</strong></legend>
+                            <p>Smoke: <strong>Detected</strong></p>
+                            <p><mark>Warning: Smoke detected!</mark></p>
+                            <p>Battery level:
+                                <meter min="0" max="100" low="20" high="50" optimum="100" value="55">55%</meter> 55%
+                            </p>
+                        </fieldset>
+                    </td>
+                    <td width="33%" valign="top">
+                        <fieldset>
+                            <legend><strong>Gas leak sensor 🔴 OFF</strong></legend>
+                            <p><em>Gas level: Not monitored</em></p>
+                            <p><mark>Warning: No battery!</mark></p>
+                            <p>Battery level:
+                                <meter min="0" max="100" low="20" high="50" optimum="100" value="0">0%</meter> 0%
+                            </p>
+                        </fieldset>
+                    </td>
+                    <td width="33%" valign="top">
+                        <fieldset>
+                            <legend><strong>Water leak sensor 🟢 ON</strong></legend>
+                            <p>Water leak: <strong>Detected</strong></p>
+                            <p><mark>Warning: Water leak detected!</mark></p>
+                            <p>Battery level:
+                                <meter min="0" max="100" low="20" high="50" optimum="100" value="95">95%</meter> 95%
+                            </p>
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+
+            <details>
+                <summary>Show more: Room Rules</summary>
+                <ul>
+                    <li>Smoke must not be detected.</li>
+                    <li>Gas leaks must not be detected.</li>
+                    <li>Water leaks must not be detected.</li>
+                </ul>
+            </details>
+
+            <p><a href="#top">Back to top</a></p>
+        </section>
+
+        <hr>
+
+        <!-- ================= Spalna ================= -->
+        <section id="bedroom">
+            <h2>Bedroom</h2>
+
+            <table width="100%">
+                <tr>
+                    <td width="33%" valign="top">
+                        <fieldset>
+                            <legend><strong>Temperature sensor 🟢 ON</strong></legend>
+                            <p>Temperature: <output>21</output> °C</p>
+                            <p>Battery level:
+                                <meter min="0" max="100" low="20" high="50" optimum="100" value="65">65%</meter> 65%
+                            </p>
+                        </fieldset>
+                    </td>
+                    <td width="33%" valign="top">
+                        <fieldset>
+                            <legend><strong>Humidity sensor 🟢 ON</strong></legend>
+                            <p>Humidity level:
+                                <meter min="0" max="100" value="43">43%</meter> 43%
+                            </p>
+                            <p>Battery level:
+                                <meter min="0" max="100" low="20" high="50" optimum="100" value="17">17%</meter> 17%
+                            </p>
+                        </fieldset>
+                    </td>
+                    <td width="33%" valign="top">
+                        <fieldset>
+                            <legend><strong>Motion sensor 🟢 ON</strong></legend>
+                            <p>Motion: <strong>Detected</strong></p>
+                            <p>Battery level:
+                                <meter min="0" max="100" low="20" high="50" optimum="100" value="5">5%</meter> 5%
+                            </p>
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+
+            <details>
+                <summary>Show more: Bedroom Rules</summary>
+                <ul>
+                    <li>Temperature must be between 18°C and 24°C.</li>
+                    <li>Humidity should be between 30% and 60%.</li>
+                    <li>The motion sensor must be active.</li>
+                </ul>
+            </details>
+
+            <p><a href="#top">Back to top</a></p>
+        </section>
+
+        <hr>
+
+        <!-- ================= Gradina ================= -->
+        <section id="garden">
+            <h2>Garden</h2>
+
+            <table width="100%">
+                <tr>
+                    <td width="33%" valign="top">
+                        <fieldset>
+                            <legend><strong>Soil moisture sensor 🟢 ON</strong></legend>
+                            <p>Soil moisture:
+                                <meter min="0" max="100" value="25">25%</meter> 25%
+                            </p>
+                            <p><mark>Warning: Soil is too dry!</mark></p>
+                            <p>Battery level:
+                                <meter min="0" max="100" low="20" high="50" optimum="100" value="13">13%</meter> 13%
+                            </p>
+                        </fieldset>
+                    </td>
+                    <td width="33%" valign="top">
+                        <fieldset>
+                            <legend><strong>Outdoor temperature sensor 🟢 ON</strong></legend>
+                            <p>Temperature: <output>28</output> °C</p>
+                            <p>Battery level:
+                                <meter min="0" max="100" low="20" high="50" optimum="100" value="25">25%</meter> 25%
+                            </p>
+                        </fieldset>
+                    </td>
+                    <td width="33%" valign="top">
+                        <fieldset>
+                            <legend><strong>Rain sensor 🔴 OFF</strong></legend>
+                            <p><em>Rain: Not monitored</em></p>
+                            <p><mark>Warning: Rain sensor not active!</mark></p>
+                            <p>Battery level:
+                                <meter min="0" max="100" low="20" high="50" optimum="100" value="100">100%</meter> 100%
+                            </p>
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+
+            <details>
+                <summary>Show more: Garden Rules</summary>
+                <ul>
+                    <li>Soil moisture should be at least 30%.</li>
+                    <li>Outdoor temperature must be between 10°C and 30°C.</li>
+                    <li>The rain sensor must be active to monitor rainfall.</li>
+                </ul>
+            </details>
+
+            <p><a href="#top">Back to top</a></p>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>Smart Home dashboard</p>
+    </footer>
+
+</body>
+</html>
