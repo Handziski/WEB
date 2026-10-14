@@ -49,7 +49,7 @@
                     <td width="33%" valign="top">
                         <fieldset>
                             <legend><strong>Temperature sensor 🟢 ON</strong></legend>
-                            <p>Temperature: <output>22</output> °C</p>
+                            <p>Temperature: <input type="number" min="0" max="100" value="22"></input> °C</p>
                             <p>Battery level:
                                 <meter min="0" max="100" low="20" high="50" optimum="100" value="85">85%</meter> 85%
                             </p>
@@ -59,7 +59,7 @@
                         <fieldset>
                             <legend><strong>Light sensor 🟢 ON</strong></legend>
                             <p>Light level:
-                                <meter min="0" max="100" value="75">75%</meter> 75%
+                                0<input type="range" min="0" max="100" value="75" style="accent-color: coral">100</input>
                             </p>
                             <p>Battery level:
                                 <meter min="0" max="100" low="20" high="50" optimum="100" value="73">73%</meter> 73%
@@ -157,7 +157,7 @@
                     <td width="33%" valign="top">
                         <fieldset>
                             <legend><strong>Temperature sensor 🟢 ON</strong></legend>
-                            <p>Temperature: <output>21</output> °C</p>
+                            <p>Temperature: <input type="number" min="0" max="100" value="21"></input> °C</p>
                             <p>Battery level:
                                 <meter min="0" max="100" low="20" high="50" optimum="100" value="65">65%</meter> 65%
                             </p>
