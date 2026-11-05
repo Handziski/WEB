@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Formula 1 trka</h1>
+        <p class="INT">Simulacija na trka od 10 kruga so 10 vozaci</p>
+
+        <div class="controls">
+            <button id="startB">Zapocni trka</button>
+            <button id="nextLapB">Sleden krug</button>
+            <button id="resetB">Reset</button>
+        </div>
+
+        <div id="info" class="race-info">Trkata se ushte ne e zapocnata</div>
+        <div id="winner" class="winner"></div>
+
+        <h2>Tabela na vozaci</h2>
+        <div class="tableW">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pozicija</th>
+                        <th>Vozac</th>
+                        <th>Tim</th>
+                        <th>Gumi</th>
+                        <th>Vkupno vreme</th>
+                        <th>Status vo krugot</th>
+                    </tr>
+                </thead>
+                <tbody id="driverTable"></tbody>
+            </table>
+        </div>
+
+        <p class="note">Sekoj vozac mora barem ednash da go smeni tipot na gumi.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

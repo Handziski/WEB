@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 25px;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #0f0f14, #23233a);
+    color: #f1f1f1;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px;
+    background-color: #1b1b26;
+    border-radius: 20px;
+    border-top: 6px solid #e10600;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    margin: 0 0 10px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #ffffff;
+}
+
+h2 {
+    color: #ffffff;
+    border-left: 5px solid #e10600;
+    padding-left: 10px;
+}
+
+.INT {
+    text-align: center;
+    color: #a0a0b5;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 25px 0;
+}
+
+button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    background-color: #e10600;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.15s, background-color 0.15s;
+}
+
+button:hover:not(:disabled) {
+    background-color: #ff2a22;
+    transform: translateY(-2px);
+}
+
+button:disabled {
+    background-color: #3a3a4d;
+    color: #8888a0;
+    cursor: not-allowed;
+}
+
+.race-info {
+    padding: 15px;
+    margin: 15px 0;
+    text-align: center;
+    font-weight: bold;
+    background-color: #262636;
+    border-radius: 10px;
+    color: #ffd166;
+}
+
+.winner {
+    margin: 15px 0;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: gold;
+}
+
+.tableW {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 12px 8px;
+    text-align: center;
+    border-bottom: 1px solid #2e2e42;
+}
+
+th {
+    background-color: #e10600;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #222233;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #1b1b26;
+}
+
+tbody tr:hover {
+    background-color: #2d2d45;
+}
+
+tbody td:first-child {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.pos-1 td:first-child {
+    border-left: 6px solid gold;
+    color: gold;
+}
+
+.pos-2 td:first-child {
+    border-left: 6px solid silver;
+    color: silver;
+}
+
+.pos-3 td:first-child {
+    border-left: 6px solid #cd7f32;
+    color: #cd7f32;
+}
+
+.note {
+    margin-top: 15px;
+    color: #a0a0b5;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.status-pit {
+    color: #65c8ff;
+    font-weight: bold;
+}
+
+.status-spin {
+    color: #ff8585;
+    font-weight: bold;
+}
+
+.status-safety {
+    color: #ffd166;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    .container {
+        padding: 15px;
+    }
+    th, td {
+        font-size: 13px;
+        padding: 8px 4px;
+    }
+}
